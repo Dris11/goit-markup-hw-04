@@ -85,6 +85,9 @@ body {
 }
 
 .contact-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -102,6 +105,10 @@ body {
     display: flex;
 }
 
+.navigation-list {
+    gap: 50px;
+}
+
 .nav-list-item {
     text-decoration: none;
     font-weight: 500;
@@ -109,14 +116,20 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--brand-color-dark);
-    margin: 32px 50px 32px 0px;
 }
 
-.nav-list-item:hover,
+.nav-list-item:hover {
+    color: var(--brand-color);
+    stroke: var(--brand-color);
+    border-bottom: 4px solid var(--brand-color);
+    border-radius: 2px;
+    padding-bottom: 28px;
+}
+
 .contact-list-item:hover,
-.nav-list-item:focus,
 .contact-list-item:focus {
     color: var(--brand-color);
+    stroke: var(--brand-color);
 }
 
 /* REQUEST SECTION STYLES */
@@ -125,9 +138,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    max-width: 1600px;
+    margin: 0px auto;
 
-    background-color: var(--brand-color-background);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(/images/background.jpg) no-repeat;
 }
 
 .request-section-title {
@@ -170,6 +185,21 @@ body {
     display: flex;
     gap: 30px;
     margin: 94px auto;
+}
+
+.strenghts-icon:hover,
+.strenghts-icon:focus {
+    stroke: var(--brand-color);
+}
+
+.strenghts-icon-container {
+    display: flex;
+    align-items: center;
+    background: #f5f4fa;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
 }
 
 .strenghts-title {
@@ -224,7 +254,7 @@ body {
 .team-list {
     display: flex;
     gap: 30px;
-    justify-content: start;
+    justify-content: center;
 }
 
 .team-section {
@@ -263,9 +293,32 @@ body {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
 
     color: var(--brand-color-light);
+}
+
+.team-social-icon-container ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 30px;
+}
+
+.icon-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+}
+
+.icon-list-item:hover {
+    background-color: var(--brand-color);
+}
+
+.team-icon {
 }
 
 /* FOOTER STYLES */

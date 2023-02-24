@@ -330,6 +330,10 @@ body {
 
 /* FOOTER STYLES */
 
+.footer-icon {
+    fill: #ffffff;
+}
+
 .footer-container {
     display: flex;
     gap: 10px;

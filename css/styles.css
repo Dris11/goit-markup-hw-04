@@ -319,12 +319,26 @@ body {
 }
 
 .team-icon {
+    fill: #afb1b8;
 }
+
+.team-icon:hover {
+    fill: #ffff;
+}
+
+/* CUSTOMER SECTION */
 
 /* FOOTER STYLES */
 
+.footer-container {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
 .footer-list {
     margin-top: 28px;
+    width: 231px;
 }
 
 .footer-list-item {

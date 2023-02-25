@@ -188,11 +188,6 @@ body {
     margin: 94px auto;
 }
 
-.strenghts-icon:hover,
-.strenghts-icon:focus {
-    stroke: var(--brand-color);
-}
-
 .strenghts-icon-container {
     display: flex;
     align-items: center;

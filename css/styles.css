@@ -307,7 +307,8 @@ body {
     padding-bottom: 30px;
 }
 
-.icon-list-item {
+.icon-list-item,
+.icon-list-item-footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -350,13 +351,29 @@ body {
     padding-bottom: 94px;
 }
 
-.icons-customers:hover {
+.icons-customers:hover,
+.icon-customer:focus {
     fill: var(--brand-color);
+    stroke: var(--brand-color);
     border-color: var(--brand-color);
+}
+
+.icon {
+    fill: #afb1b8;
+}
+
+.icon:hover,
+.icon:focus {
+    fill: var(--brand-color);
+    stroke: var(--brand-color);
 }
 
 /* FOOTER STYLES */
 
+.icon-list-item-footer:hover,
+.icon-list-item-footer:focus {
+    background: var(--brand-color);
+}
 .footer-icon {
     fill: #ffffff;
 }
